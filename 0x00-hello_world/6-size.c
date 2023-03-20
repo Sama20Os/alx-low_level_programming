@@ -1,10 +1,6 @@
 #include <stdio.h>
 int main()
 {
-    int integerType;
-    float floatType;
-    double doubleType;
-    char charType;
 
     // Sizeof operator is used to evaluate the size of a variable
 	printf("Size of int: %ld bytes\n",sizeof(integerType));
