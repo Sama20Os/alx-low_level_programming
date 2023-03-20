@@ -1,12 +1,15 @@
 #include <stdio.h>
-int main()
+/**
+ * main - evaluate the size of the variables
+ *
+ * Return: Always 0 (Success)
+ */
+int main(void)
 {
-
-    // Sizeof operator is used to evaluate the size of a variable
-	printf("Size of int: %ld bytes\n",sizeof(integerType));
-	printf("Size of float: %ld bytes\n",sizeof(floatType));
-	printf("Size of double: %ld bytes\n",sizeof(doubleType));
-	printf("Size of char: %ld byte\n",sizeof(charType));
-
+	iprintf("Size of int: %ld bytes\n",sizeof(int));
+	printf("Size of float: %ld bytes\n",sizeof(float));
+	printf("Size of long int: %ld bytes\n",sizeof(long int));
+	printf("Size of char: %ld byte\n",sizeof(char));
+	printf("Size of long long int: %d byte(s)\n",sizeof(long long int));	
 	return 0;
 }
