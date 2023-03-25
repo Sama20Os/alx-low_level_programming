@@ -5,7 +5,7 @@
  *
  * @n: is the number of times the \ character
  * should be printed
- */
+*/
 
 void print_diagonal(int n)
 {
@@ -20,7 +20,7 @@ void print_diagonal(int n)
 			for (space = 1; space <= postn; space++)
 				_putchar(' ');
 			_putchar(92); /*is equal to '/' char*/
-		_putchar('\n');
 		}
+		_putchar('\n');
 	}
 }
