@@ -3,25 +3,24 @@ include "main.h"
 /**
  * rev_string - reverses a string
  * _putchar - print each character
- * @s: char to check
+ * @s: string parameter input
  *
- * Description: This will reverse a string
- * Return: 0 is success
+ * Return: Nothing
  */
 void rev_string(char *s)
 {
-	int a = 0, b, c;
-	char d;
+	int l, i;
+	char temp;
 
-	while (s[a] != '\0');
+	/*find string length without null char*/
+	for (l = 0; s[l] != '\0'; ++l)
+		;
+
+	/*swap the string by looping to half the string*/
+	for (i = 0; i < l / 2; i++)
 	{
-		a++;
-	}
-	c = a - 1;
-	for (b = 0; c >= 0 && b < c; c--, b++);
-	{
-		d = s[b];
-		s[b] = s[c];
-		s[c] = d;
+		temp = s[i];
+		s[i] = s[l - 1 - i]; /*-1 because the array starts from 0*/
+		s[l - 1 - i] = temp;
 	}
 }
