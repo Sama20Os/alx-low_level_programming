@@ -1,12 +1,13 @@
-include "main.h"
+#include "main.h"
 
 /**
  * rev_string - reverses a string
- * _putchar - print each character
+ *
  * @s: string parameter input
  *
  * Return: Nothing
- */
+*/
+
 void rev_string(char *s)
 {
 	int l, i;
@@ -23,4 +24,5 @@ void rev_string(char *s)
 		s[i] = s[l - 1 - i]; /*-1 because the array starts from 0*/
 		s[l - 1 - i] = temp;
 	}
+
 }
